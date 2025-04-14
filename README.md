@@ -1,5 +1,9 @@
 # Project Title
 
+## Descriptive Statistics
+
+This folder contains metadata on members of the German Parliament such as Instagram follower count, year of birth, party etc. (Alle_Abgeordneten.xlsx), as well as the jupyter-notebook, that was used to analyze this data (analysis.ipynb)
+
 ## Sentiment Analysis 
 
 ### Comparison of sentiment models
