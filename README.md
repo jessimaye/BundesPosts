@@ -25,3 +25,33 @@ To ensure that the fine-tuned models are robust and not overfitted to the traini
 ### Running the model
 
 The jupyter notebook "Model_Run" contains the run of the model with which the data was annotated. During the scraping some data had to be retrieved at a later point, which is also processed within this notebook.
+
+### Analysing and visualizing the data
+The two jupyter notebooks called "Sentiment_pro_Jahr" and "Sentiment_pro_Partei" contain the code to analyse and visualise the data. 
+"Sentiment_pro_Jahr" focuses on absolute post numbers and their visualisation per year, per month and in long graphs spanning several years, regardless of parties.
+"Sentiment_pro_Partei" on the other hand does almost the same, except with focus on each individual party. In addition to absolute numbers, this notebook concentrates also on a mean-sentiment value for eacht party. This mean is calculated by subtracting the number of negative posts from the number of positive posts and dividing the result through the total number of posts. The resulting graphics can be found in Analyse/Sentiment_Graphics.zip of this repository.
+These visualisations have been the foundation of the analysis.
+
+## Analyse
+This folder contains the results of the analysis. There are currently one folder called "Parteien_Top_Ten" and a zip-file called "Sentiment_Graphics" in this folder. The zip-file contains every graphic that can be produced with the code from Sentiment-Analysis/Sentiment_pro_Jahr.ipynb and Sentiment-Analysis/Sentiment_pro_Partei.ipynb, which are over 100 indiviual graphics.
+
+### Parteien_Top_Ten
+This folder contains 40 files with five files for each party. 
+
+The five files contain:
+- The ten most frequent topics for all positive posts of the party
+- The ten most frequent topics for all neutral posts of the party
+- The ten most frequent topics for all negative posts of the party
+- The ten most frequent topics in general of the party
+- An overview combining the prior four files
+
+
+
+
+
+
+
+
+
+
+
