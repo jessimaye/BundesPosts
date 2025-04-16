@@ -44,7 +44,7 @@ The file "Model_Info_in_df.csv" contains the information about the model regardi
 
 In the jupyter notebook "Topic_Analysis" the mapping of the topic names to the ids can be found as well as the analysis for whicht the dataframe was filtered by party, year and month in different versions.
 
-### Analyse
+# Analyse
 
 This folder contains the results of the analysis. There are currently one folder called "Parteien_Top_Ten" and a zip-file called "Sentiment_Graphics" in this folder. The zip-file contains every graphic that can be produced with the code from Sentiment-Analysis/Sentiment_pro_Jahr.ipynb and Sentiment-Analysis/Sentiment_pro_Partei.ipynb, which are over 100 indiviual graphics.
 
