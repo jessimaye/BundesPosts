@@ -52,7 +52,12 @@ The five files contain:
 For the Topic Modeling, we used BERTopic, specifically, we implemented a configuration optimized for large-scale data processing. Following standard preprocessing procedures, including the removal of stopwords,
 the documents (i.e., the social media posts) are transformed into dense vector representations using Sentence-BERT embeddings. We applied the pretrained embedding model paraphrase-multilingual-MiniLM-L12-v2, which
 is well-suited for multilingual content. The resulting embeddings were cached temporarily and subsequently passed to a multilingual BERTopic model for unsupervised clustering and topic extraction. The initial number of generated topics was reduced to 150 using the model’s builtin topic reduction functionality. Furthermore, we applied the reduce_outliers method to reassign these documents to the most semantically appropriate topics.
-To assess whether the topic model generated meaningful and contextually appropriate themes, we analyzed the ten most frequent topics separately for negative, positive, and neutral posts, and compared them with corresponding word clouds for each sentiment category. 
+To assess whether the topic model generated meaningful and contextually appropriate themes, we analyzed the ten most frequent topics separately for negative, positive, and neutral posts, and compared them with corresponding word clouds for each sentiment category. The training of the model can be found in the jupyter notebook "bert_topic_training".
+
+The file "Model_Info_in_df.csv" contains the information about the model regarding which topics there are, associated words and example documents.
+
+In the jupyter notebook "Topic_Analysis" the mapping of the topic names to the ids can be found as well as the analysis for whicht the dataframe was filtered by party, year and month in different versions.
+
 
 
 
