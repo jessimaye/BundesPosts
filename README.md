@@ -33,9 +33,11 @@ The two jupyter notebooks called "Sentiment_pro_Jahr" and "Sentiment_pro_Partei"
 These visualisations have been the foundation of the analysis.
 
 ## Analyse
+
 This folder contains the results of the analysis. There are currently one folder called "Parteien_Top_Ten" and a zip-file called "Sentiment_Graphics" in this folder. The zip-file contains every graphic that can be produced with the code from Sentiment-Analysis/Sentiment_pro_Jahr.ipynb and Sentiment-Analysis/Sentiment_pro_Partei.ipynb, which are over 100 indiviual graphics.
 
 ### Parteien_Top_Ten
+
 This folder contains 40 files with five files for each party. 
 
 The five files contain:
@@ -47,7 +49,10 @@ The five files contain:
 
 # Topic Modeling
 
-
+For the Topic Modeling, we used BERTopic, specifically, we implemented a configuration optimized for large-scale data processing. Following standard preprocessing procedures, including the removal of stopwords,
+the documents (i.e., the social media posts) are transformed into dense vector representations using Sentence-BERT embeddings. We applied the pretrained embedding model paraphrase-multilingual-MiniLM-L12-v2, which
+is well-suited for multilingual content. The resulting embeddings were cached temporarily and subsequently passed to a multilingual BERTopic model for unsupervised clustering and topic extraction. The initial number of generated topics was reduced to 150 using the model’s builtin topic reduction functionality. Furthermore, we applied the reduce_outliers method to reassign these documents to the most semantically appropriate topics.
+To assess whether the topic model generated meaningful and contextually appropriate themes, we analyzed the ten most frequent topics separately for negative, positive, and neutral posts, and compared them with corresponding word clouds for each sentiment category. 
 
 
 
