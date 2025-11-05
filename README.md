@@ -1,9 +1,5 @@
 # Project Title
 
-## Descriptive Statistics
-
-This folder contains metadata on members of the German Parliament such as Instagram follower count, year of birth, party etc. (Alle_Abgeordneten.xlsx), as well as the jupyter-notebook, that was used to analyze this data (analysis.ipynb)
-
 ## Sentiment Analysis 
 
 ### Comparison of sentiment models
@@ -20,7 +16,7 @@ To ensure compatibility with our model, we mapped the sentiment labels to numeri
 
 ### Evaluation of fine-tuned models using gold standard
 
-To ensure that the fine-tuned models are robust and not overfitted to the training data, we used an subset of 2,000 posts of our collected data, which were choosen randomly through the "Evaluationsdatensatz_Erstellung"-Notebook, that we have annotated ourselves ("Evaluationsdatensatz-3.xlsx), for evaluation and to determine which model is most suitable for our task. The jupyter notebook "Classification_of_evaluation_texts" contains the pipeline to assign a sentiment to each post of this subset using GBERT1 and GBERT2, the results can be seen in  "Evaluationstexte_mit_Modellergebnissen.csv". We then compared the model results with our gold standard. This evaluation process can be found in "Evaluation_with_Goldstandard.ipynb", which also contains a confusion matrix and a classification report for GBERT1 and GBERT2 respectively. Morover, this notebook contains the calculation of Krippendorffs Alpha for the Inter Annotator Agreement. 
+To ensure that the fine-tuned models are robust and not overfitted to the training data, we used an subset of 2,000 posts of our collected data, which were choosen randomly through the "Evaluationsdatensatz_Erstellung"-Notebook, that we have annotated ourselves, for evaluation and to determine which model is most suitable for our task. The jupyter notebook "Classification_of_evaluation_texts" contains the pipeline to assign a sentiment to each post of this subset using GBERT1 and GBERT2. We then compared the model results with our gold standard. This evaluation process can be found in "Evaluation_with_Goldstandard.ipynb", which also contains a confusion matrix and a classification report for GBERT1 and GBERT2 respectively. Morover, this notebook contains the calculation of Krippendorffs Alpha for the Inter Annotator Agreement. 
 
 ### Running the model
 
